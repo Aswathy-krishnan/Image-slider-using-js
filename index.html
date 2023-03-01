@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- <a href="#" class="next-Menu"><i class="fa fa-chevrons-left"></i></a> -->
+    <div class="main-box">
+      <div class="inner-box">
+        <!-- <div class="icons">
+          <i class="fa fa-backward icon fa-2xl back"></i>
+          <i class="fa fa-forward icon next"></i>
+        </div> -->
+        <div class="slide" id="start">
+          <img src="image/0a0d2b9190343c628b991fa5c036c839.jpg" alt="" />
+
+          <h2>YOGA</h2>
+          <p class="headings">
+            <br />
+            No Philosophies <br />
+            Just methods
+          </p>
+        </div>
+
+        <div class="slide">
+          <img src="image/yoga940.jpg" alt="" />
+          <span>
+            New To Yoga? Learn Everything About Yoga <br />
+            “Yoga is not just an exercise. <br />
+            It is a process and system through which human beings <br />
+            can find their highest possible potential.” - Sadhguru</span
+          >
+        </div>
+
+        <div class="slide">
+          <img src="image/Surya-Namaskar.jpg" alt="" />
+
+          <ul>
+            <li>
+              Types of yoga include hatha, Iyengar, vinyasa, hot yoga, and
+              ashtanga.
+            </li>
+            <li>
+              For an aerobic workout, a vinyasa class might be the best to boost
+              your heart rate.
+            </li>
+            <li>
+              If you're looking for a more meditative class, ashtanga focuses on
+              mindful movement.
+            </li>
+          </ul>
+        </div>
+        <div class="slide">
+          <img src="image/Janu-Shirshasana.jpg" alt="" />
+        </div>
+      </div>
+      <div>
+        <input
+          type="radio"
+          value="0"
+          name="radio-button"
+          id="radio0"
+          class="radios"
+        />
+        <input
+          type="radio"
+          value="1"
+          name="radio-button"
+          id="radio1"
+          class="radios"
+        />
+        <input
+          type="radio"
+          value="2"
+          name="radio-button"
+          id="radio2"
+          class="radios"
+        />
+        <input
+          type="radio"
+          value="3"
+          name="radio-button"
+          id="radio3"
+          class="radios"
+        />
+      </div>
+    </div>
+  </body>
+</html>
+<script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"
+></script>
+<script>
+  $(document).ready(() => {
+    let i = 0;
+    setInterval(() => {
+      let margin = -i * 80;
+      $("#start").css("margin-left", margin + "vw");
+      $(`#radio${i}`).prop("checked", true);
+      i++;
+      if (i > 3) {
+        i = 0;
+      }
+    }, 5000);
+
+    $("input").change(() => {
+      let radiovalue = $("input:checked").val();
+      let marginLeft = -(80 * radiovalue);
+      $("#start").css("margin-left", marginLeft + "vw");
+    });
+  });
+</script>

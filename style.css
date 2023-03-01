@@ -1,0 +1,70 @@
+h2 {
+    color: aquamarine;
+    position: relative;
+    bottom: 489px;
+    margin-left: 14px;
+    font-size: 56px;
+  }
+  ul {
+    position: relative;
+    bottom: 436px;
+    line-break: auto;
+    text-indent: initial;
+    line-height: 53px;
+    color: aliceblue;
+    font-size: 24px;
+  }
+
+  .headings {
+    position: relative;
+    bottom: 545px;
+    font-size: 34px;
+    color: aliceblue;
+    margin-left: 32px;
+  }
+
+  .slide span {
+    background-color: aqua;
+  }
+
+  .slide span {
+    color: red;
+    position: relative;
+    bottom: 450px;
+    left: 450px;
+    color: black;
+    font-style: italic;
+    font-size: 22px;
+    background-color: thistle;
+
+    text-align: right;
+  }
+
+  .main-box {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inner-box {
+    background-color: aquamarine;
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .slide img {
+    height: 80vh;
+    width: 80vw;
+  }
+  #start {
+    /* margin-left: -80vw; */
+    transition: 2s;
+  }
+  .radios {
+    position: relative;
+    bottom: 40px;
+  }
